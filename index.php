@@ -13,6 +13,12 @@ $result = mysqli_query($mysqli, "SELECT * FROM TMessage ORDER BY id DESC"); // u
 </head>
 
 <body>
+	<h1>
+		<?php 
+		echo "server: ".getenv('dbHost');
+		echo ", db: ".getenv('dbName');
+		?>
+	</h1>
 <a href="add.html">Add New Data</a><br/><br/>
 
 	<table width='80%' border=0>
